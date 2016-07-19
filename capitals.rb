@@ -166,7 +166,7 @@ end
 # until the user decides to end the game...
 while true
   #Ask the user to name the capital of each state.
-  states.each_with_index do |state, index|
+  states.each do |state|
     puts "What is the capital of " + state[:name] + "?"
 
     answer = gets.chomp
